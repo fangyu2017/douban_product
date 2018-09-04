@@ -1,0 +1,45 @@
+body,
+td,
+th {
+  font: 12px Helvetica, Arial, sans-serif;
+  line-height: 1.62;
+}
+
+input,
+button,
+textarea,
+select,
+optgroup,
+option {
+  font-family: inherit;
+  font-size: inherit;
+  font-style: inherit;
+  font-weight: inherit;
+}
+
+ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+}
+
+ul,
+ol {
+  list-style: none;
+}
+
+input {
+  font-size: 12px;
+  margin-right: 3px;
+  vertical-align: middle;
+}
+
+a {
+  cursor: pointer;
+}
+*{
+  padding: 0;
+  margin: 0;
+}
+
+

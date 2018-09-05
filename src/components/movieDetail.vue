@@ -1,8 +1,8 @@
 <template>
   <div class="movie_detail">
-    <h3>name+年份</h3>
+    <h3>{{detail.title}} ({{detail.year}})</h3>
     <div class="detail_fl">
-      <img src="" alt="">
+      <img :src="detail.images.large" alt="">
     </div>
     <div class="detail_r">
       <p>导演: 佩顿·里德</p>
@@ -31,13 +31,12 @@
     methods:{
        getJosn(id){
         this.$axios.get("/api/v2/movie/subject/"+id).then(res=>{
-          // this.detail=res.data.subjects
+          this.detail=res.data
           console.log(res)
         })
        }
     },
     created(){
-      console.log(this.$route)
       this.getJosn(this.$route.params.id)
     }
   }
